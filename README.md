@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.com/10mohi6/line-notify-python.svg?branch=master)](https://travis-ci.com/10mohi6/line-notify-python)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/linenotipy)](https://pypi.org/project/linenotipy/)
 
-linenotipy is a python client library for line notify api on Python 3.4 and above.
+linenotipy is a python client library for line notify api on Python 3.5 and above.
 
 
 ## Installation
