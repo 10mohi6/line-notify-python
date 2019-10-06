@@ -1,17 +1,17 @@
-# line-notify
+# linenotipy
 
-[![PyPI](https://img.shields.io/pypi/v/line-notify)](https://pypi.org/project/line-notify/)
+[![PyPI](https://img.shields.io/pypi/v/linenotipy)](https://pypi.org/project/linenotipy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![codecov](https://codecov.io/gh/10mohi6/line-notify-python/branch/master/graph/badge.svg)](https://codecov.io/gh/10mohi6/line-notify-python)
 [![Build Status](https://travis-ci.com/10mohi6/line-notify-python.svg?branch=master)](https://travis-ci.com/10mohi6/line-notify-python)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/line-notify)](https://pypi.org/project/line-notify/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/linenotipy)](https://pypi.org/project/linenotipy/)
 
-line-notify is a python client library for line notify api on Python 3.5 and above.
+linenotipy is a python client library for line notify api on Python 3.4 and above.
 
 
 ## Installation
 
-    $ pip install line-notify
+    $ pip install linenotipy
 
 ## Usage
 
@@ -19,7 +19,7 @@ line-notify is a python client library for line notify api on Python 3.5 and abo
 #
 # basic
 #
-from line_notify import Line
+from linenotipy import Line
 
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, world.")
@@ -27,7 +27,7 @@ line.post(message="Hello, world.")
 #
 # image
 #
-from line_notify import Line
+from linenotipy import Line
 
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, image.", imageFile="test.png")
@@ -35,7 +35,7 @@ line.post(message="Hello, image.", imageFile="test.png")
 #
 # stamp
 #
-from line_notify import Line
+from linenotipy import Line
 
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, stamp.", stickerPackageId=3, stickerId=180)

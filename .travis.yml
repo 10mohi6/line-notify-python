@@ -3,6 +3,7 @@ language: python
 
 # Set the python version
 python:
+  - "3.4"
   - "3.5"
   - "3.6"
   - "3.7"
@@ -14,7 +15,7 @@ install:
 
 # Run the unit test
 script:
-  - python -m pytest --cov=line_notify tests/
+  - python -m pytest --cov=linenotipy tests/
 
 # Push the results back to codecov
 after_success:

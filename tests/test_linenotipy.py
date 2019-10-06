@@ -1,5 +1,5 @@
 import os, pytest
-from line_notify import Line
+from linenotipy import Line
 
 class TestLine(object):
 
