@@ -40,9 +40,11 @@ from line_notify import Line
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, stamp.", stickerPackageId=3, stickerId=180)
 
-# sticker [documentation](https://devdocs.line.me/files/sticker_list.pdf)
 
 ```
+sticker [documentation](https://devdocs.line.me/files/sticker_list.pdf)
+
+
 ## Getting started
 
 For help getting started with LINE Notify API, view our online [documentation](https://notify-bot.line.me/doc/en/).
