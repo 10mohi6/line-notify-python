@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name  = 'linenotipy',
-    version = '1.0.0',
+    version = '1.0.1',
     description = 'linenotipy is a python client library for line notify api on Python 3.5 and above.',
     long_description = long_description,
     long_description_content_type="text/markdown",
@@ -15,7 +15,7 @@ setup(
     url='https://github.com/10mohi6/line-notify-python',
     keywords = 'line notify python',
     packages = find_packages(),
-    install_requires = [],
+    install_requires = ['requests'],
     python_requires=">=3.5.0",
     classifiers = [
         'Development Status :: 5 - Production/Stable',
