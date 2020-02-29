@@ -1,26 +1,37 @@
-import os, pytest
+import os
+import pytest
+import time
 from linenotipy import Line
 
-class TestLine(object):
 
-    def setup_method(self, method):
-        token = os.environ['line_notify_token']
-        self.line = Line(token=token)
+@pytest.fixture(scope="module", autouse=True)
+def scope_module():
+    token = os.environ["line_notify_token"]
+    yield Line(token=token)
 
-    def test_post_message(self):
 
-        expected = 'ok'
-        actual = self.line.post(message="Hello, world.")
-        assert expected == actual['message']
+@pytest.fixture(scope="function", autouse=True)
+def line(scope_module):
+    time.sleep(1)
+    yield scope_module
 
-    def test_post_image(self):
 
-        expected = 'ok'
-        actual = self.line.post(message="Hello, image.", imageFile="tests/test.png")
-        assert expected == actual['message']
+# @pytest.mark.skip
+def test_line_post_message(line):
+    expected = "ok"
+    actual = line.post(message="Hello, world.")
+    assert expected == actual["message"]
 
-    def test_post_stamp(self):
 
-        expected = 'ok'
-        actual = self.line.post(message="Hello, stamp.", stickerPackageId=3, stickerId=180)
-        assert expected == actual['message']
+# @pytest.mark.skip
+def test_line_post_image(line):
+    expected = "ok"
+    actual = line.post(message="Hello, image.", imageFile="tests/test.png")
+    assert expected == actual["message"]
+
+
+# @pytest.mark.skip
+def test_line_post_stamp(line):
+    expected = "ok"
+    actual = line.post(message="Hello, stamp.", stickerPackageId=3, stickerId=180)
+    assert expected == actual["message"]

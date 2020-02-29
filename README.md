@@ -5,8 +5,9 @@
 [![codecov](https://codecov.io/gh/10mohi6/line-notify-python/branch/master/graph/badge.svg)](https://codecov.io/gh/10mohi6/line-notify-python)
 [![Build Status](https://travis-ci.com/10mohi6/line-notify-python.svg?branch=master)](https://travis-ci.com/10mohi6/line-notify-python)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/linenotipy)](https://pypi.org/project/linenotipy/)
+[![Downloads](https://pepy.tech/badge/linenotipy)](https://pepy.tech/project/linenotipy)
 
-linenotipy is a python client library for line notify api on Python 3.5 and above.
+linenotipy is a python client library for line notify api on Python 3.6 and above.
 
 
 ## Installation
@@ -15,32 +16,26 @@ linenotipy is a python client library for line notify api on Python 3.5 and abov
 
 ## Usage
 
+### basic
 ```python
-#
-# basic
-#
 from linenotipy import Line
 
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, world.")
-
-#
-# image
-#
+```
+### image
+```python
 from linenotipy import Line
 
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, image.", imageFile="test.png")
-
-#
-# stamp
-#
+```
+### stamp
+```python
 from linenotipy import Line
 
 line = Line(token='XXXXXXXXXX')
 line.post(message="Hello, stamp.", stickerPackageId=3, stickerId=180)
-
-
 ```
 sticker [documentation](https://devdocs.line.me/files/sticker_list.pdf)
 
