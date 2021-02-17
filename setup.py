@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="linenotipy",
-    version="1.0.2",
+    version="1.0.3",
     description="linenotipy is a python client library \
         for line notify api on Python 3.6 and above.",
     long_description=open("README.md").read(),
@@ -22,6 +22,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Intended Audience :: Developers",
         "Topic :: Communications :: Chat",
         "Topic :: System :: Networking",
