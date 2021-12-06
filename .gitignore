@@ -9,3 +9,4 @@ build/
 .vscode/
 .mypy_cache/
 Dockerfile
+.devcontainer/
